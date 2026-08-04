@@ -1,0 +1,7 @@
+# Summary Prompt Template v1.0
+Summarize the following top-ranked internship opportunities into a high-impact daily digest for Telegram.
+
+Opportunities:
+{{opportunitiesJson}}
+
+Format as clean, readable Markdown with bullet points, stipend, deadline, and direct apply link.

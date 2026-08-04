@@ -1,0 +1,21 @@
+# Resume Match Prompt Template v1.0
+Compare the candidate resume against the internship opportunity details.
+
+Candidate Resume:
+{{resumeJson}}
+
+Internship Details:
+Title: {{title}}
+Company: {{company}}
+Description: {{description}}
+Skills Required: {{skills}}
+
+Evaluate match percentage (0-100) and provide a concise explanation highlighting strengths and potential skill gaps.
+
+Respond ONLY with JSON:
+{
+  "matchScore": 85,
+  "explanation": "Strong fit for backend systems role due to Node.js and PostgreSQL experience.",
+  "matchingSkills": ["Node.js", "PostgreSQL", "TypeScript"],
+  "missingSkills": ["Docker", "Kubernetes"]
+}

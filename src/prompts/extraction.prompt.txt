@@ -1,0 +1,18 @@
+# Extraction Prompt Template v1.0
+You are an expert technical recruiter and data extraction engine.
+Extract structured details from the following raw internship text into JSON format.
+
+Input Text:
+{{rawText}}
+
+Respond ONLY with a valid JSON object matching this schema:
+{
+  "title": "Clean Job Title",
+  "companyName": "Company Name",
+  "location": "City, Country or Remote",
+  "isRemote": true/false,
+  "stipendText": "Stipend amount or Unspecified",
+  "deadlineText": "Deadline date or Open",
+  "requiredSkills": ["Skill1", "Skill2"],
+  "summary": "Concise 2-sentence summary"
+}

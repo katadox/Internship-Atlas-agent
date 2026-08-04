@@ -1,0 +1,56 @@
+{
+  "name": "atlas-intern-ai",
+  "version": "1.0.0",
+  "description": "Autonomous, event-driven, AI-powered internship intelligence platform",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "plugin:test": "tsx src/scripts/testPlugin.ts",
+    "advisor:test": "tsx src/scripts/testAdvisor.ts",
+    "telegram:test": "tsx src/scripts/testTelegram.ts",
+    "resume:test": "tsx src/scripts/testResume.ts",
+    "pipeline:run": "tsx src/scripts/runPipeline.ts",
+    "lint": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "internship",
+    "ai",
+    "autonomous",
+    "gemini",
+    "supabase",
+    "triggerdotdev",
+    "crawler"
+  ],
+  "author": "Atlas InternAI",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "latest",
+    "@supabase/server": "^1.4.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "@trigger.dev/sdk": "4.5.9",
+    "axios": "^1.8.1",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "mammoth": "^1.9.0",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.50.1",
+    "rss-parser": "^3.13.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@trigger.dev/build": "4.5.9",
+    "@types/node": "^22.13.4",
+    "@types/pdf-parse": "^1.1.4",
+    "prettier": "^3.5.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  }
+}
